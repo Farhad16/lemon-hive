@@ -51,10 +51,10 @@ function Hero() {
         Elevate Your Brand: Powerhouse Agency for Impactful Strategies
       </p>
       <div className="flex flex-row gap-4">
-        <button className="text-[#90E900] border border-[#90E900] px-6 py-3 rounded-[30px] font-medium">
+        <button className="transition duration-300 ease-in-out text-[#90E900] border border-[#90E900] hover:bg-[#BCF266] px-6 py-3 rounded-[30px] hover:text-[#1E2A37] font-medium">
           Our Services
         </button>
-        <button className="bg-[#BCF266] px-6 py-3 rounded-[30px] text-[#1E2A37] font-medium">
+        <button className="transition duration-300 ease-in-out text-[#90E900] border border-[#90E900] hover:bg-[#BCF266] px-6 py-3 rounded-[30px] hover:text-[#1E2A37] font-medium">
           Work with Us
         </button>
       </div>
