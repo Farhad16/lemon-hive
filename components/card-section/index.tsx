@@ -15,7 +15,7 @@ function CardSection() {
       serial: "02",
       img: "img2.png",
       title: "Pre-processing",
-      desccription:
+      description:
         "Your data is organized, cleaned, and given context as we interpret it. Your data gains meaning through the semantic layer, making it simpler for business users to comprehend. We assist you in gaining a clear understanding of what it signifies so you can take action.",
     },
     {
@@ -59,6 +59,7 @@ function CardSection() {
 
   return (
     <div className="cards">
+      <div className="title" />
       {cards.map((card) => (
         <Card key={card.serial} {...card} />
       ))}

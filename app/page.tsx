@@ -6,7 +6,7 @@ import Services from "@/components/Services";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col space-y-12">
       <Navbar />
       <HeroSection />
       <Services />

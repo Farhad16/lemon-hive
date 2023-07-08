@@ -58,7 +58,6 @@ function Hero() {
           Work with Us
         </button>
       </div>
-      <AngleImage />
     </div>
   );
 }

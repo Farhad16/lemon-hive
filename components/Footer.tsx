@@ -10,7 +10,7 @@ const Footer = () => {
           <img src="/Logo.svg" className="w-24" />
           <p className="mt-4">
             © {new Date().getFullYear()}{" "}
-            <span className="text-[#D3F699]">Abc</span>. All rights reserved.
+            <span className="text-[#90E900]">Abc</span>. All rights reserved.
           </p>
         </div>
 
