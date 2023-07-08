@@ -19,12 +19,6 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
   font-family: "Public Sans", sans-serif;
   overflow: hidden;
   overflow-y: scroll;
@@ -50,4 +44,67 @@ body {
   width: 100%;
   height: 100%;
   transform: rotateX(0deg);
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 70%;
+  height: auto;
+}
+
+/* stack cards */
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 100px 0 20px;
+  padding: 0 40px;
+}
+
+.first-card {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+
+  z-index: 0;
+  width: 100%;
+}
+
+.first-card .title {
+  font-size: 2rem;
+  padding: 1.45rem;
+}
+
+.card {
+  position: sticky;
+  max-width: 1280px;
+  width: 100%;
+  height: 520px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 200px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  background: #172029;
+  border: 1px solid #ddd;
+}
+
+.card .details {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
 }

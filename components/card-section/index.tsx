@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "./Card";
 
 function CardSection() {
@@ -34,10 +34,33 @@ function CardSection() {
     },
   ];
 
+  useEffect(() => {
+    // Elements
+    const cards: any = document.querySelectorAll(".cards .card");
+    const title: any = document.querySelector(".cards .title");
+
+    // Constants
+    const OFFSET = 80;
+    const scaleReduction = 0.05;
+
+    const { marginBottom } = getComputedStyle(cards[0]);
+    const { height } = title.getBoundingClientRect();
+    let margin = parseInt(marginBottom, 10);
+    let scale = 0.9;
+
+    cards.forEach((card: any, index: any) => {
+      card.style.top = `${index * OFFSET + height}px`;
+      card.style.marginBottom = `${margin}px`;
+      card.style.transform = `scale(${scale})`;
+      margin -= OFFSET;
+      scale += scaleReduction;
+    });
+  }, []);
+
   return (
-    <div className="flex flex-col">
+    <div className="cards">
       {cards.map((card) => (
-        <Card key={card.serial} />
+        <Card key={card.serial} {...card} />
       ))}
     </div>
   );

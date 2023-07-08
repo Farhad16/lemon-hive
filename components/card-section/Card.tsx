@@ -2,13 +2,18 @@
 
 const Card = ({ img, title, description, serial }: any) => {
   return (
-    <div className="w-full flex flex-row items-center border border-gray-500">
+    <div className="card w-full flex flex-row items-center text-white">
       <div className="flex flex-col gap-6">
-        <h1>{serial}</h1>
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <div className="details">
+          <h1 className="text-[#D3F699] font-semibold text-3xl">{serial}</h1>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
       </div>
-      <img src={img} alt="" />
+      <img />
+      <div className="example">
+        <img src={img} alt="" className="w-[50%]" />
+      </div>
     </div>
   );
 };

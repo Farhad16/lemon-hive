@@ -23,7 +23,7 @@ function Hero() {
   }, [words.length]);
 
   return (
-    <div className="flex flex-col space-y-6 items-center">
+    <div className="flex flex-col space-y-8 items-center text-white">
       <p className="text-2xl sm:text-6xl font-semibold transition duration-300 ease-in-out text-center">
         {words.map((word: any, index: any) => {
           return index == 1 ? (
@@ -50,6 +50,14 @@ function Hero() {
       <p className="sm:text-lg font-medium text-center">
         Elevate Your Brand: Powerhouse Agency for Impactful Strategies
       </p>
+      <div className="flex flex-row gap-4">
+        <button className="text-[#90E900] border border-[#90E900] px-6 py-3 rounded-[30px] font-medium">
+          Our Services
+        </button>
+        <button className="bg-[#BCF266] px-6 py-3 rounded-[30px] text-[#1E2A37] font-medium">
+          Work with Us
+        </button>
+      </div>
       <AngleImage />
     </div>
   );

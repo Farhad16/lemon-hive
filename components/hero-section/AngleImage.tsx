@@ -16,7 +16,7 @@ const AngleImage = () => {
   }, []);
 
   return (
-    <div className="scene flex items-center justify-center">
+    <div className="scene flex items-center justify-center mt-2">
       <img
         src="/angle.png"
         alt="angle"
