@@ -16,9 +16,10 @@ const Footer = () => {
 
         {/* Middle Column */}
         <div className="w-full lg:w-1/3 mt-6 lg:mt-0">
-          <h4 className="text-lg font-bold mb-2">Contact</h4>
-          <p>Phone: 123-456-7890</p>
-          <p>Email: info@example.com</p>
+          <p className="font-bold text-[#EFE600]">LONDON</p>
+          <p className="text-sm">20-22 Wenlock Road, London, N1 7GU</p>
+          <p className="text-[#90E900] mt-2">+44 207 1188550</p>
+          <p className="text-sm mt-3">career@lemonhive.com</p>
         </div>
 
         {/* Right Column */}

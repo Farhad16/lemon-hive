@@ -36,8 +36,8 @@ function CardSection() {
 
   useEffect(() => {
     // Elements
-    const cards: any = document.querySelectorAll(".cards .card");
-    const title: any = document.querySelector(".cards .title");
+    const cards: any = document.querySelectorAll(".card");
+    const title: any = document.querySelector(".title");
 
     // Constants
     const OFFSET = 80;
@@ -58,7 +58,7 @@ function CardSection() {
   }, []);
 
   return (
-    <div className="cards">
+    <div>
       <div className="title" />
       {cards.map((card) => (
         <Card key={card.serial} {...card} />
