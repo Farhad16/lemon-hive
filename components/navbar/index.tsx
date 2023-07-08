@@ -2,6 +2,7 @@
 import React, { useMemo, useState } from "react";
 import ServicesMenu from "./ServicesMenu";
 import Popover from "./PopoverMenu";
+import ProductMenu from "./ProductMenu";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -14,7 +15,7 @@ const Navbar = () => {
     },
     {
       name: "projects",
-      component: <ServicesMenu />,
+      component: <ProductMenu />,
     },
   ];
   const activeMegaMenu = useMemo(() => {
@@ -44,14 +45,14 @@ const Navbar = () => {
         {menus.map((menu) => (
           <li
             key={menu}
-            onMouseOver={() => setActive(menu)}
+            onMouseEnter={() => setActive(menu)}
             className={`capitalize transition duration-300 ease-in-out cursor-pointer group flex flex-col items-center relative py-2 hover:text-[#90E900]${
               active === menu && " active"
             } `}
           >
             {menu}
             <span
-              className={`h-[5px] w-[5px] bg-[#90E900] rounded-full absolute bottom-0 group-hover:visible ${
+              className={`h-[6px] w-[6px] bg-[#90E900] rounded-full absolute bottom-0 group-hover:visible ${
                 active === menu ? "sm:visible" : "sm:invisible"
               }`}
               onClick={handleClick}
