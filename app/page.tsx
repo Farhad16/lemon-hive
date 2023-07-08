@@ -1,7 +1,7 @@
 import CardSection from "@/components/card-section";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/hero-section";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar";
 import Services from "@/components/Services";
 
 export default function Home() {

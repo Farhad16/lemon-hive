@@ -1,9 +1,39 @@
 "use client";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
+import ServicesMenu from "./ServicesMenu";
+import Popover from "./PopoverMenu";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const menus = ["home", "services", "projects", "blogs"];
+
+  const megaMenus = [
+    {
+      name: "services",
+      component: <ServicesMenu />,
+    },
+    {
+      name: "projects",
+      component: <ServicesMenu />,
+    },
+  ];
+  const activeMegaMenu = useMemo(() => {
+    return megaMenus.filter((menu) => menu.name === active)[0];
+  }, [active]);
+
+  const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
+    null
+  );
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
 
   return (
     <nav className="flex items-center justify-between p-4 text-white">
@@ -24,6 +54,7 @@ const Navbar = () => {
               className={`h-[5px] w-[5px] bg-[#90E900] rounded-full absolute bottom-0 group-hover:visible ${
                 active === menu ? "sm:visible" : "sm:invisible"
               }`}
+              onClick={handleClick}
             ></span>
           </li>
         ))}
@@ -34,6 +65,9 @@ const Navbar = () => {
           </button>
         </li>
       </ul>
+      <Popover open={open} anchorEl={anchorEl} handleClose={handleClose}>
+        {activeMegaMenu?.component}
+      </Popover>
     </nav>
   );
 };
