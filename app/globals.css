@@ -77,7 +77,7 @@ body {
 .card {
   position: sticky;
   max-width: 1280px;
-  width: 95%;
+  width: 100%;
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 220px;

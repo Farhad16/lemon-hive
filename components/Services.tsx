@@ -6,7 +6,7 @@ const Services = () => {
       <p className="text-[#90E900] font-medium sm:text-lg">
         Trusted by Top-tier product campanies
       </p>
-      <div className="fill flex flex-row items-center gap-8 mt-4">
+      <div className="fill flex flex-wrap justify-center sm:flex-row items-center gap-4 sm:gap-8 mt-4">
         {[...Array(5)].map((_, num) => (
           <img
             key={num}

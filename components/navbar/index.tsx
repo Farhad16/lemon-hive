@@ -19,7 +19,7 @@ const Navbar = () => {
     },
   ];
   const activeMegaMenu = useMemo(() => {
-    return megaMenus.filter((menu) => menu.name === active)[0] || megaMenus[0];
+    return megaMenus.filter((menu) => menu.name === active)[0];
   }, [active]);
 
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
@@ -37,11 +37,11 @@ const Navbar = () => {
   const open = Boolean(anchorEl);
 
   return (
-    <nav className="flex items-center justify-between p-4 text-white">
+    <nav className="w-full flex items-center flex-col sm:flex-row justify-between py-4 text-white gap-4">
       <div className="flex items-center">
         <img src="/Logo.svg" className="sm:w-24 max-w-[100px]" />
       </div>
-      <ul className="flex flex-row items-center gap-8 sm:visible invisible">
+      <ul className="flex flex-col items-center gap-2 sm:gap-8 sm:flex-row">
         {menus.map((menu) => (
           <li
             key={menu}
@@ -53,7 +53,7 @@ const Navbar = () => {
             {menu}
             <span
               className={`h-[6px] w-[6px] bg-[#90E900] rounded-full absolute bottom-0 group-hover:visible ${
-                active === menu ? "sm:visible" : "sm:invisible"
+                active === menu ? "visible" : "invisible"
               }`}
               onClick={handleClick}
             ></span>
@@ -61,16 +61,16 @@ const Navbar = () => {
         ))}
 
         <li>
-          <button className="transition duration-300 ease-in-out text-[#90E900] border border-[#90E900] hover:bg-[#BCF266] px-6 py-3 rounded-[30px] hover:text-[#1E2A37] font-medium">
+          <button className="transition duration-300 ease-in-out text-[#90E900] border border-[#90E900] hover:bg-[#BCF266] px-6 py-3 rounded-[30px] hover:text-[#1E2A37] font-medium mt-2 sm:mt-0">
             Get In Touch
           </button>
         </li>
+        {activeMegaMenu && (
+          <Popover open={open} anchorEl={anchorEl} handleClose={handleClose}>
+            {activeMegaMenu?.component}
+          </Popover>
+        )}
       </ul>
-      {activeMegaMenu && (
-        <Popover open={open} anchorEl={anchorEl} handleClose={handleClose}>
-          {activeMegaMenu?.component}
-        </Popover>
-      )}
     </nav>
   );
 };

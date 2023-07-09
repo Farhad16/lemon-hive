@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#172029] min-h-screen px-[30px] sm:px-[150px]">
+      <body className="bg-[#172029] min-h-screen px-[30px] sm:px-[150px] overflow-hidden overflow-y-auto">
         {children}
       </body>
     </html>
