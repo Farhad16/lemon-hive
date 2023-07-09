@@ -19,7 +19,7 @@ const Navbar = () => {
     },
   ];
   const activeMegaMenu = useMemo(() => {
-    return megaMenus.filter((menu) => menu.name === active)[0];
+    return megaMenus.filter((menu) => menu.name === active)[0] || megaMenus[0];
   }, [active]);
 
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
@@ -66,9 +66,11 @@ const Navbar = () => {
           </button>
         </li>
       </ul>
-      <Popover open={open} anchorEl={anchorEl} handleClose={handleClose}>
-        {activeMegaMenu?.component}
-      </Popover>
+      {activeMegaMenu && (
+        <Popover open={open} anchorEl={anchorEl} handleClose={handleClose}>
+          {activeMegaMenu?.component}
+        </Popover>
+      )}
     </nav>
   );
 };

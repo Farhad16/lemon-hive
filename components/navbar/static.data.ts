@@ -22,27 +22,27 @@ export const content = [
     id: 0,
     content: [
       {
-        img: "/1.png",
+        img: "/nav/1.png",
         name: "Progressive Web Apps",
         title: "Offline-capable web apps",
       },
       {
-        img: "/2.png",
+        img: "/nav/2.png",
         name: "API Integration",
         title: "Connect and integrate various systems",
       },
       {
-        img: "/3.png",
+        img: "/nav/3.png",
         name: "Content Management System",
         title: "Efficient content creation and management",
       },
       {
-        img: "/4.png",
+        img: "/nav/4.png",
         name: "E-commerce Integration",
         title: "Seamlessly integrate with popular platforms",
       },
       {
-        img: "/5.png",
+        img: "/nav/5.png",
         name: "Analytics and Tracking",
         title: "Monitor and analyze user behavior",
       },
@@ -52,27 +52,27 @@ export const content = [
     id: 1,
     content: [
       {
-        img: "/1.png",
+        img: "/nav/1.png",
         name: "Order Management System",
         title: "Streamline order processing",
       },
       {
-        img: "/2.png",
+        img: "/nav/2.png",
         name: "Payment Gateway Integration",
         title: "Secure payment transactions",
       },
       {
-        img: "/3.png",
+        img: "/nav/3.png",
         name: "Inventory Management",
         title: "Track and manage inventory efficiently",
       },
       {
-        img: "/4.png",
+        img: "/nav/4.png",
         name: "Personalization Engine",
         title: "Deliver personalized user experiences",
       },
       {
-        img: "/5.png",
+        img: "/nav/5.png",
         name: "Marketing Automation",
         title: "Automate marketing campaigns",
       },
@@ -82,27 +82,27 @@ export const content = [
     id: 2,
     content: [
       {
-        img: "/1.png",
+        img: "/nav/1.png",
         name: "iOS App Development",
         title: "Engaging iOS applications",
       },
       {
-        img: "/2.png",
+        img: "/nav/2.png",
         name: "Android App Development",
         title: "Feature-rich Android applications",
       },
       {
-        img: "/3.png",
+        img: "/nav/3.png",
         name: "Hybrid App Development",
         title: "Cross-platform mobile solutions",
       },
       {
-        img: "/4.png",
+        img: "/nav/4.png",
         name: "App Maintenance and Support",
         title: "Ensure app performance and updates",
       },
       {
-        img: "/5.png",
+        img: "/nav/5.png",
         name: "App Store Optimization",
         title: "Improve app visibility and downloads",
       },
@@ -112,27 +112,27 @@ export const content = [
     id: 3,
     content: [
       {
-        img: "/1.png",
+        img: "/nav/1.png",
         name: "Web Application Development",
         title: "Scalable web solutions",
       },
       {
-        img: "/2.png",
+        img: "/nav/2.png",
         name: "Enterprise Software Development",
         title: "Optimized software for businesses",
       },
       {
-        img: "/3.png",
+        img: "/nav/3.png",
         name: "CRM and ERP Solutions",
         title: "Efficient management systems",
       },
       {
-        img: "/4.png",
+        img: "/nav/4.png",
         name: "Cloud-based Solutions",
         title: "Harness the power of cloud computing",
       },
       {
-        img: "/5.png",
+        img: "/nav/5.png",
         name: "Legacy System Integration",
         title: "Integrate with existing infrastructure",
       },
@@ -160,22 +160,22 @@ export const productContent = [
     id: 0,
     content: [
       {
-        img: "/1.png",
+        img: "/nav/1.png",
         name: "CityJobs",
         title: "Seamless global hiring platform",
       },
       {
-        img: "/2.png",
+        img: "/nav/2.png",
         name: "Upmarket Digital Agency",
         title: "A B2B service website for a digital marketing agency",
       },
       {
-        img: "/3.png",
+        img: "/nav/3.png",
         name: "Eastside",
         title: "Shopify expert services and consultancy",
       },
       {
-        img: "/4.png",
+        img: "/nav/4.png",
         name: "CryptonSEO",
         title: "Enhance online visibility and search rankings",
       },
@@ -185,17 +185,17 @@ export const productContent = [
     id: 1,
     content: [
       {
-        img: "/1.png",
+        img: "/nav/1.png",
         name: "Garaz",
         title: "Seamless online shopping experience",
       },
       {
-        img: "/2.png",
+        img: "/nav/2.png",
         name: "Obay",
         title: "Innovative and captivating e-commerce platform",
       },
       {
-        img: "/3.png",
+        img: "/nav/3.png",
         name: "A2Z Market",
         title: "Unique and compelling e-commerce platform",
       },
@@ -205,27 +205,27 @@ export const productContent = [
     id: 2,
     content: [
       {
-        img: "/1.png",
+        img: "/nav/1.png",
         name: "GoodsPanda",
         title: "Fast and seamless food delivery application",
       },
       {
-        img: "/2.png",
+        img: "/nav/2.png",
         name: "SurvChimp",
         title: "A distinctive and captivating survey platform",
       },
       {
-        img: "/3.png",
+        img: "/nav/3.png",
         name: "Ai Stock Trader",
         title: "An AI based stock broker in the global market",
       },
       {
-        img: "/4.png",
+        img: "/nav/4.png",
         name: "GoHorray",
         title: "Easy and fast app platform for booking and ticketing",
       },
       {
-        img: "/5.png",
+        img: "/nav/5.png",
         name: "PLP",
         title: "Seamless online apparels designing app",
       },
