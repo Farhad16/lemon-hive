@@ -9,6 +9,7 @@ const Services = () => {
       <div className="fill flex flex-row items-center gap-8 mt-4">
         {[...Array(5)].map((_, num) => (
           <img
+            key={num}
             src={`/logos/logo${++num}.svg`}
             className="w-[100px] h-[40px] cursor-pointer logo"
           />

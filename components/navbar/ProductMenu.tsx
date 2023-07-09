@@ -41,6 +41,7 @@ export default function ProductMenu() {
             className={`"box transition duration-300 ease-in-out flex flex-col text-white hover:bg-[#D3F699] p-3 hover:text-black rounded-md cursor-pointer" ${
               active === i && "bg-[#D3F699] arrow text-black"
             }`}
+            key={1}
             onMouseEnter={() => setActive(i)}
           >
             <span className="text-xs font-medium">{tab.name}</span>
@@ -50,7 +51,10 @@ export default function ProductMenu() {
       </div>
       <div className="flex flex-col bg-[#172029] rounded-md p-3 w-[240px] gap-2 ">
         {selectedOption?.map((opt, i) => (
-          <div className="transition duration-300 ease-in-out flex flex-row gap-2 items-start text-white hover:bg-[#D3F699] p-3 hover:text-black rounded-md cursor-pointer curve">
+          <div
+            key={1}
+            className="transition duration-300 ease-in-out flex flex-row gap-2 items-start text-white hover:bg-[#D3F699] p-3 hover:text-black rounded-md cursor-pointer curve"
+          >
             <img src={opt.img} alt={opt.name} className="w-6 h-6" />
             <div className="flex flex-col">
               <span className="text-xs font-medium">{opt.name}</span>

@@ -42,6 +42,7 @@ export default function ServicesMenu() {
               active === i && "bg-[#D3F699] arrow text-black"
             }`}
             onMouseEnter={() => setActive(i)}
+            key={i}
           >
             <span className="text-xs font-medium">{tab.name}</span>
             <span className="text-[11px] font-light">{tab.title}</span>
@@ -51,7 +52,10 @@ export default function ServicesMenu() {
       <div className="flex flex-row bg-[#172029] rounded-md p-3 w-[460px] gap-2">
         <div className="w-1/2">
           {selectedOption?.map((opt, i) => (
-            <div className="transition duration-300 ease-in-out flex flex-row gap-3 items-start text-white hover:bg-[#D3F699] p-3 hover:text-black rounded-md cursor-pointer curve">
+            <div
+              className="transition duration-300 ease-in-out flex flex-row gap-3 items-start text-white hover:bg-[#D3F699] p-3 hover:text-black rounded-md cursor-pointer curve"
+              key={i}
+            >
               <img src={opt.img} alt={opt.name} className="w-6 h-6" />
               <div className="flex flex-col">
                 <span className="text-xs font-medium">{opt.name}</span>
