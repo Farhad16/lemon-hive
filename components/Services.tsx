@@ -12,6 +12,7 @@ const Services = () => {
             key={num}
             src={`/logos/logo${++num}.svg`}
             className="w-[100px] h-[40px] cursor-pointer logo"
+            alt="logo"
           />
         ))}
       </div>
