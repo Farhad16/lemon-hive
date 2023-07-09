@@ -50,7 +50,7 @@ export default function ServicesMenu() {
         ))}
       </div>
       <div className="flex flex-row bg-[#172029] rounded-md p-3 w-[460px] gap-2">
-        <div className="w-1/2">
+        <div className="sm:w-1/2">
           {selectedOption?.map((opt, i) => (
             <div
               className="transition duration-300 ease-in-out flex flex-row gap-3 items-start text-white hover:bg-[#D3F699] p-3 hover:text-black rounded-md cursor-pointer curve"
@@ -65,7 +65,7 @@ export default function ServicesMenu() {
           ))}
         </div>
 
-        <div className="flex flex-col w-1/2 items-center gap-6">
+        <div className="sm:flex flex-col w-1/2 hidden items-center gap-6">
           <div className="w-full h-1/2 flex items-center justify-center logoBg flex-col gap-2">
             <img src="/logo1.svg" alt="logo" className="scale-[0.8]" />
             <h1 className="text-xl text-center font-semibold">
